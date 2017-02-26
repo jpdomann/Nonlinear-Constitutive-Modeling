@@ -1,0 +1,19 @@
+function [Rx, Ry, Rz] = RotationMatrices(theta,phi)
+%ROTATIONMATRICES Summary of this function goes here
+%   Detailed explanation goes here
+
+Rx = [1   0            0;...
+    0   cos(theta) 	-sin(theta);...
+    0   sin(theta)   cos(theta)];
+
+Ry = [cos(theta)   0   sin(theta);...
+    0            1 	0;...
+    -sin(theta)  0   cos(theta)];
+
+Rz = [cos(phi)     -sin(phi)   0;...
+    sin(phi)     cos(phi)    0;...
+    0            0           1];
+
+
+end
+
